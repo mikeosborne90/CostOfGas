@@ -1,3 +1,3 @@
 # CostOfGas
 Cost of Gas form using visual basic.
-[Imgur](https://i.imgur.com/eNIVNPk.png)
+<img src="https://i.imgur.com/vHoJ9wT.png" alt="Roulette GUI and Betting strategies" />
