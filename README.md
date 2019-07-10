@@ -1,3 +1,3 @@
 # CostOfGas
 Cost of Gas form using visual basic.
-<img src="https://imgur.com/eNIVNPk" />
+[Imgur](https://i.imgur.com/eNIVNPk.png)
