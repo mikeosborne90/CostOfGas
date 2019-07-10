@@ -1,13 +1,13 @@
-﻿Public Class Form1
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+﻿Public Class GasCalculator
+    Private Sub btnCalculate_Click(sender As Object, e As EventArgs) Handles btnCalculate.Click
+        Try
+            Dim miles As Decimal = CDec(textBoxMilesDriven.Text)
+            Dim mpg As Decimal = CDec(textBoxMpg.Text)
+            Dim gasPrice As Decimal = CDec(textBoxGasPrice.Text)
 
-    End Sub
+            lblResult.Text = "$" & CStr(Decimal.Round(((miles / mpg) * gasPrice), 2))
+        Catch ex As Exception
 
-    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles lblMpg.Click
-
-    End Sub
-
-    Private Sub Label1_Click_1(sender As Object, e As EventArgs) Handles lblCostOfGas.Click
-
+        End Try
     End Sub
 End Class

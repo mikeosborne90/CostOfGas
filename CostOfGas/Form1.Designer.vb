@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form1
+Partial Class GasCalculator
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -29,12 +29,14 @@ Partial Class Form1
         Me.lblCostOfGas = New System.Windows.Forms.Label()
         Me.lblResult = New System.Windows.Forms.Label()
         Me.btnCalculate = New System.Windows.Forms.Button()
+        Me.textBoxGasPrice = New System.Windows.Forms.TextBox()
+        Me.lblGasPrice = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'lblMilesDriven
         '
         Me.lblMilesDriven.AutoSize = True
-        Me.lblMilesDriven.Location = New System.Drawing.Point(44, 9)
+        Me.lblMilesDriven.Location = New System.Drawing.Point(21, 9)
         Me.lblMilesDriven.Name = "lblMilesDriven"
         Me.lblMilesDriven.Size = New System.Drawing.Size(62, 13)
         Me.lblMilesDriven.TabIndex = 0
@@ -43,22 +45,22 @@ Partial Class Form1
         'lblMpg
         '
         Me.lblMpg.AutoSize = True
-        Me.lblMpg.Location = New System.Drawing.Point(196, 9)
+        Me.lblMpg.Location = New System.Drawing.Point(126, 9)
         Me.lblMpg.Name = "lblMpg"
         Me.lblMpg.Size = New System.Drawing.Size(27, 13)
-        Me.lblMpg.TabIndex = 1
+        Me.lblMpg.TabIndex = 2
         Me.lblMpg.Text = "mpg"
         '
         'textBoxMilesDriven
         '
-        Me.textBoxMilesDriven.Location = New System.Drawing.Point(47, 25)
+        Me.textBoxMilesDriven.Location = New System.Drawing.Point(24, 25)
         Me.textBoxMilesDriven.Name = "textBoxMilesDriven"
         Me.textBoxMilesDriven.Size = New System.Drawing.Size(52, 20)
-        Me.textBoxMilesDriven.TabIndex = 2
+        Me.textBoxMilesDriven.TabIndex = 1
         '
         'textBoxMpg
         '
-        Me.textBoxMpg.Location = New System.Drawing.Point(184, 25)
+        Me.textBoxMpg.Location = New System.Drawing.Point(114, 25)
         Me.textBoxMpg.Name = "textBoxMpg"
         Me.textBoxMpg.Size = New System.Drawing.Size(52, 20)
         Me.textBoxMpg.TabIndex = 3
@@ -66,19 +68,19 @@ Partial Class Form1
         'lblCostOfGas
         '
         Me.lblCostOfGas.AutoSize = True
-        Me.lblCostOfGas.Location = New System.Drawing.Point(65, 104)
+        Me.lblCostOfGas.Location = New System.Drawing.Point(91, 103)
         Me.lblCostOfGas.Name = "lblCostOfGas"
         Me.lblCostOfGas.Size = New System.Drawing.Size(62, 13)
-        Me.lblCostOfGas.TabIndex = 4
+        Me.lblCostOfGas.TabIndex = 7
         Me.lblCostOfGas.Text = "cost of gas:"
         '
         'lblResult
         '
         Me.lblResult.AutoSize = True
-        Me.lblResult.Location = New System.Drawing.Point(133, 104)
+        Me.lblResult.Location = New System.Drawing.Point(153, 103)
         Me.lblResult.Name = "lblResult"
         Me.lblResult.Size = New System.Drawing.Size(0, 13)
-        Me.lblResult.TabIndex = 5
+        Me.lblResult.TabIndex = 8
         '
         'btnCalculate
         '
@@ -89,11 +91,29 @@ Partial Class Form1
         Me.btnCalculate.Text = "calculate"
         Me.btnCalculate.UseVisualStyleBackColor = True
         '
-        'Form1
+        'textBoxGasPrice
+        '
+        Me.textBoxGasPrice.Location = New System.Drawing.Point(202, 25)
+        Me.textBoxGasPrice.Name = "textBoxGasPrice"
+        Me.textBoxGasPrice.Size = New System.Drawing.Size(52, 20)
+        Me.textBoxGasPrice.TabIndex = 5
+        '
+        'lblGasPrice
+        '
+        Me.lblGasPrice.AutoSize = True
+        Me.lblGasPrice.Location = New System.Drawing.Point(204, 9)
+        Me.lblGasPrice.Name = "lblGasPrice"
+        Me.lblGasPrice.Size = New System.Drawing.Size(50, 13)
+        Me.lblGasPrice.TabIndex = 4
+        Me.lblGasPrice.Text = "gas price"
+        '
+        'GasCalculator
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(284, 139)
+        Me.ClientSize = New System.Drawing.Size(284, 133)
+        Me.Controls.Add(Me.textBoxGasPrice)
+        Me.Controls.Add(Me.lblGasPrice)
         Me.Controls.Add(Me.btnCalculate)
         Me.Controls.Add(Me.lblResult)
         Me.Controls.Add(Me.lblCostOfGas)
@@ -101,8 +121,11 @@ Partial Class Form1
         Me.Controls.Add(Me.textBoxMilesDriven)
         Me.Controls.Add(Me.lblMpg)
         Me.Controls.Add(Me.lblMilesDriven)
-        Me.Name = "Form1"
-        Me.Text = "Cost of Gas Calculator"
+        Me.MaximizeBox = False
+        Me.MaximumSize = New System.Drawing.Size(300, 172)
+        Me.MinimumSize = New System.Drawing.Size(300, 172)
+        Me.Name = "GasCalculator"
+        Me.Text = "Cost of Gas"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -115,4 +138,6 @@ Partial Class Form1
     Friend WithEvents lblCostOfGas As Label
     Friend WithEvents lblResult As Label
     Friend WithEvents btnCalculate As Button
+    Friend WithEvents textBoxGasPrice As TextBox
+    Friend WithEvents lblGasPrice As Label
 End Class
